@@ -1,0 +1,10 @@
+<div>
+    <ul>
+        <li *ngFor="let painting of paintings">
+            <h4>{{painting.title}}</h4>
+            <img src="{{painting.url}}" alt="{{painting.title}}">
+            <p class="inline">Price:{{painting.price}}</p>
+            <button class="inline">Buy</button>
+        </li>
+    </ul>
+</div>
