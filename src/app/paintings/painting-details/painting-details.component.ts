@@ -7,6 +7,7 @@ import { PaintingService } from '../../shared/painting.service'
   styleUrls: ['./painting-details.component.css']
 })
 export class PaintingDetailsComponent implements OnInit {
+  painting: any
 
   constructor(private paintingService:PaintingService) {
 
@@ -17,3 +18,4 @@ export class PaintingDetailsComponent implements OnInit {
   }
 
 }
+
