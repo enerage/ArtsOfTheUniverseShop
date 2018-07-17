@@ -1,0 +1,13 @@
+a>img{
+    width: 50px;
+}
+
+#nav{
+    background-color:inherit;
+    border-width: 0px;
+}
+
+li>a{
+    color:white;
+}
+
