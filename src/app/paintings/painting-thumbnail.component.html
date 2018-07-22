@@ -1,10 +1,26 @@
-<div>
+<div id="thumbnail" class="container center-block">
     <ul>
-        <li *ngFor="let painting of paintings">
-            <h4>{{painting.title}}</h4>
-            <img src="{{painting.url}}" alt="{{painting.title}}">
-            <p class="inline">Price:{{painting.price}}</p>
-            <button class="inline">Buy</button>
+        <li *ngFor="let painting of paintings;">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>{{painting.title}}</h4>
+                        <img src="{{painting.url}}" class="center-block" alt="{{painting.title}}">
+                    <div>
+                        <img *ngFor="let painting of paintings;" src="{{painting.url}}" alt="{{painting.title}}">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <strong>Description</strong>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nulla ut orci viverra malesuada.
+                        Integer quis lacus at mauris lobortis sodales at in lorem. Vestibulum sed consequat odio, sit amet
+                        ullamcorper sem. Sed ut semper tellus. Praesent non urna sit amet lacus scelerisque vestibulum. Donec
+                        at tellus at ante.
+                    </p>
+                    <p>Price: {{painting.price}}</p>
+                    <button>Add to basket</button>
+                </div>
+            </div>
         </li>
     </ul>
 </div>

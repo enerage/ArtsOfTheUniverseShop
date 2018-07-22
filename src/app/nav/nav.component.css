@@ -3,11 +3,15 @@ a>img{
 }
 
 #nav{
-    background-color:inherit;
     border-width: 0px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 li>a{
     color:white;
 }
 
+li>a:hover{
+    color:white;
+    text-decoration: underline;
+}

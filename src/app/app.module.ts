@@ -7,10 +7,12 @@ import { PaintingThumbnailComponent } from './paintings/painting-thumbnail.compo
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { PaintingDetailsComponent } from './paintings/painting-details/painting-details.component';
-import { PaintingService } from './shared/painting.service';
+import { PaintingService } from './services/painting.service';
 import { appRoutes } from './routes';
-import { RouterModule } from '../../node_modules/@angular/router';
+import { RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RouterModule } from '../../node_modules/@angular/router';
     NavComponent,
     HomeComponent,
     AboutComponent,
-    PaintingDetailsComponent
+    LoginComponent,
+    RegisterComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
